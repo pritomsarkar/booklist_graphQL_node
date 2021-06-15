@@ -6,7 +6,7 @@ const cors = require("cors");
 const schema = require("./schema/schema");
 const { MONGODB } = require("./config");
 
-const PORT = 6008;
+const PORT = process.env.PORT || 6008;
 const app = express();
 
 // allow cross-origin request
